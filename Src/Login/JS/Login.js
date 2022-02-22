@@ -15,6 +15,12 @@ $(document).ready(function(){
             data: formData,
             success: function (data){
                 console.log(data);
+                if(data == "LoginErrado")
+                {
+                    bootbox.alert("Usuario ou senha invalidos");
+                    $("#login").val("");
+                    $("#password").val("");
+                }
                 if(data.idUsuario > 0)
                 {
                     console.log('logado');

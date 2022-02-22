@@ -67,4 +67,5 @@ class UserDao implements User_Dao_Interface
         }
         return $usr;
     }
+
 }
